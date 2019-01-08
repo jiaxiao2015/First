@@ -544,11 +544,6 @@ void jx_at_mic_handler_on(void)
 	L1SP_SetOutputVolume(200, 0);
 	aud_util_proc_in_med(MOD_MMI, jx_at_mic_set_loopback, MMI_TRUE, NULL);
 
-	sprintf(buffer, "%s%s%s", 
-					jx_at_cmd_table[AT_ACTION_MIC].atRetHead, 
-					"MIC loopback on!",
-					jx_at_cmd_table[AT_ACTION_MIC].atRetTailOk);
-	rmmi_write_to_uart((kal_uint8*) buffer, strlen(buffer), KAL_TRUE);
 }
 
 void jx_at_mic_handler_off(void)
