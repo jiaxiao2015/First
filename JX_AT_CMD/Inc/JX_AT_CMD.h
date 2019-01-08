@@ -44,3 +44,6 @@ extern void JX_led_status_play_autotest(void);
 
 #endif /* __JX_AT_CMD_H__ */
 
+
+
+// add a test line
